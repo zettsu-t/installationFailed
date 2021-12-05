@@ -1,0 +1,11 @@
+version: '3'
+services:
+  installation_failed:
+    build: .
+    image: installation_failed
+    ports:
+      - 8787:8787
+    tmpfs:
+      - /tmp:exec
+    volumes:
+      - .:/home/rstudio/work

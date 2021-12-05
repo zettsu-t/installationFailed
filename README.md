@@ -1,2 +1,3 @@
-# installationFailed
-Reproduce an install error in R
+# tmpfs が noexec だと、Rパッケージのインストールに失敗することがある
+
+Rのパッケージをインストールできないのは、 /tmp にマウントした tmpfs が noexec なのが原因、ということがあります。エラーメッセージからは原因が分かりにくいので、状況を再現しました。
