@@ -112,7 +112,7 @@ pkgbuild::check_compiler(debug = TRUE)
 ## Error: Failed to compile C code
 ```
 
-Now we install the data.table package. It says "'configure' exists but is not executable_ and fails".
+Now we install the data.table package. It says "'configure' exists but is not executable and fails".
 
 ``` r
 install.packages("data.table")
